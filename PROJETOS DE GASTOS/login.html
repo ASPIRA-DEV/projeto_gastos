@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Controle de despesas</title>
+  </head>
+  <body>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <h2 class="text-black text-xl mb-5 text-center">Controle de despesas</h2>
+
+    <div class="container">
+      <h4 class="text-center py-3 px-5 text-neutral-800 lg:w-8/12">Saldo atual</h4>
+      
+      <h1 id="balance" class="shadow p-3 mb-5 bg-white rounded text-center py-3 px-5 text-neutral-800 lg:w-8/12 balance">R$ 0.00</h1>
+
+      <div class=" text-center py-3 px-5 text-neutral-800  lg:w-8/12">
+        <div>
+          <h4 >Receitas</h4>
+          <p id="money-plus" class="alert alert-success money plus">+ R$0.00</p>
+        </div>
+
+        <div>
+          <h4>Despesas</h4>
+          <p id="money-minus" class="alert alert-danger money minus">- R$0.00</p>
+        </div>
+      </div>
+
+      <h3 class="text-center py-3 px-5 text-neutral-800 lg:w-8/12 transactions">Transações</h3>
+      
+      <ul id="transactions" class="text-center py-3 px-5 text-neutral-800 lg:w-8/12 transactions">
+     
+      </ul>
+
+      <h3>Adicionar transação</h3>
+      
+      <form id="form">
+        <div class="form-control ">
+          <label for="text">Nome</label>
+          <input autofocus type="text" id="text" placeholder="Nome da transação" />
+        </div>
+
+        <div class="form-control"> -->
+          <label for="amount">Valor <br/>
+            <small>(negativo - despesas, positivo - receitas)</small>
+          </label>
+           <input class="text-center py-3 px-5 text-neutral-800 lg:w-8/12"type="number" id="amount" placeholder="Valor da transação"  />
+        </div> 
+
+        <button type="btn" class="btn-primary btn-lg btn-block col-lg-11 position-flex">Adicionar</button>
+        
+        
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
